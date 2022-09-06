@@ -6,6 +6,11 @@
 }
 
 /* COMMON */
+
+html{
+    font-family: 'Whitney', sans-serif;
+}
+
 .flex-container{
     display: flex;
     justify-content: center;
@@ -18,45 +23,85 @@
     margin: 0 auto;
 }
 
-.border{
+/* .border{
     border: 1px dashed black;
-}
+} */
 
 /* HEADER */
-/* Header-Top */
-.header-top{
-    min-height: 100px;
-    background-color: lightblue;
+header {
+    background-image: url(../img/jumbo.png);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 }
+
+/* Header-Top */
 
 ul li{
     display: inline-block;
+    padding: 0 1rem;
+}
+
+li > a{
+    text-decoration: none;
+    color: white;
 }
 
 .flex-ht-container{
+    line-height: 50px;
     height: 50px;
-    background-color: orange;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
+    padding-top: 10px;
 }
 
 .box{
     height: 100%;
-    width: 25%;
+    width: 10%;
+}
+
+.box > span{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    padding: .5rem;
+    border-radius: 50px;
+    border: none;
 }
 
 /* Header-Bot */
-.header-bottom{
-    min-height: 500px;
-    background-color: lightseagreen;
-}
 
 .flex-hb-container{
     width: 50%;
     height: 80%;
-    background-color: lightcoral;
+    color: white;
+}
+
+.flex-hb-container > h1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-hb-container > h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.flex-hb-container > span{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    padding: .5em 1em;
+    border-radius: 50px;
+    border: none;
+    color: black;
+}
+
+.flex-hb-container > span:last-of-type{
+    color: white;
+    background-color: #23272a;
 }
 
 /* MAIN */
@@ -64,39 +109,62 @@ ul li{
 .white-section{
     height: 500px;
     background-color: white;
+    text-align: center;
+}
+
+.white-section h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .grey-section{
     height: 500px;
-    background-color: lightgrey;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.grey-section h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .left-box{
-    background-color: blue;
     flex-grow: 2;
-    min-height: 80%;
 }
 
 .right-box{
-    background-color: lightsalmon;
     flex-grow: 1;
-    height: 80%;
 }
 
 /* Second-Type-Section */
 .grey-section-two{
     min-height: 800px;
-    background-color: lightgrey;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.st-section h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .st-section{
-    background-color: lightgreen;
     width: 70%;
+}
+
+.st-section > span{
+    height: 10px;
+    width: 10px;
+    background-color: #7289da;
+    color: white;
+    padding: .5rem;
+    border-radius: 50px;
+    border: none;
 }
 
 /* FOOTER */
 footer{
-    background-color: darkgrey;
+    background-color: #23272a;
 }
 
 /* Footer-Top Section */
@@ -109,22 +177,24 @@ footer{
 }
 
 .col{
-    background-color: lightseagreen;
     flex-grow: 1;
     height: 500px;
-    border: 1px dashed black;
 }
 
 .col-pink{
     flex-grow: 2;
-    background-color: lightsalmon;
-    border: 1px dashed black;
+}
+
+footer ul li {
+    display: block;
+    padding: .5rem;
+    color: white;
 }
 
 /* Footer-Bottom-Section */
 .fb-section{
     height: 100px;
-    background-color: aquamarine;
+    border-top: 1px solid #7289da;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,8 +204,4 @@ footer{
 .footer-bottom{
     display: flex;
     justify-content: center;
-}
-
-.fb-section .logo, .bottone{
-    border: 1px dashed black;
 }
