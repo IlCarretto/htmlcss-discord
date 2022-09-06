@@ -1,0 +1,141 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.border{
+    border: 1px dashed black;
+}
+
+/* HEADER */
+/* Header-Top */
+.header-top{
+    min-height: 100px;
+    background-color: lightblue;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.flex-ht-container{
+    height: 50px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.box{
+    height: 100%;
+    width: 25%;
+}
+
+/* Header-Bot */
+.header-bottom{
+    min-height: 500px;
+    background-color: lightseagreen;
+}
+
+.flex-hb-container{
+    width: 50%;
+    height: 80%;
+    background-color: lightcoral;
+}
+
+/* MAIN */
+/* First-Type-Section */
+.white-section{
+    height: 500px;
+    background-color: white;
+}
+
+.grey-section{
+    height: 500px;
+    background-color: lightgrey;
+}
+
+.left-box{
+    background-color: blue;
+    flex-grow: 2;
+    min-height: 80%;
+}
+
+.right-box{
+    background-color: lightsalmon;
+    flex-grow: 1;
+    height: 80%;
+}
+
+/* Second-Type-Section */
+.grey-section-two{
+    min-height: 800px;
+    background-color: lightgrey;
+}
+
+.st-section{
+    background-color: lightgreen;
+    width: 70%;
+}
+
+/* FOOTER */
+footer{
+    background-color: darkgrey;
+}
+
+/* Footer-Top Section */
+.ft-section{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.col{
+    background-color: lightseagreen;
+    flex-grow: 1;
+    height: 500px;
+    border: 1px dashed black;
+}
+
+.col-pink{
+    flex-grow: 2;
+    background-color: lightsalmon;
+    border: 1px dashed black;
+}
+
+/* Footer-Bottom-Section */
+.fb-section{
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.fb-section .logo, .bottone{
+    border: 1px dashed black;
+}
