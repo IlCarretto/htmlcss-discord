@@ -18,6 +18,11 @@ html{
     height: 100%;
 }
 
+/* .wave{
+    display: flex;
+    align-items: flex-end;
+} */
+
 .container{
     width: 70%;
     margin: 0 auto;
@@ -215,11 +220,17 @@ footer{
 
 .col-pink h1{
     color: #7289da;
+    padding-bottom: 1em;
 }
 
 footer ul li {
     display: block;
     padding: .5rem;
+    color: white;
+}
+
+.socials{
+    padding-top: 1em;
     color: white;
 }
 
